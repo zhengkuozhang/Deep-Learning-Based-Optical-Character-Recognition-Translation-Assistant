@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments (例如 conda 或 venv 环境)
+.env
+.venv
+env/
+venv/
+ENV/
+
+# macOS
+.DS_Store
+
+# Streamlit
+.streamlit/
+
+# EasyOCR 模型缓存 (避免把下载的几十MB模型权重传上去)
+.EasyOCR/

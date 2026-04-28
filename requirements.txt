@@ -1,0 +1,24 @@
+# ──────────────────────────────────────────────────────────────
+# 基于深度学习的课本 OCR 提取与翻译助手 - 依赖清单
+# 安装命令: pip install -r requirements.txt
+# Python 版本建议: 3.9 ~ 3.11
+# ──────────────────────────────────────────────────────────────
+
+# 前端框架
+streamlit>=1.35.0
+
+# OCR 核心（基于 PyTorch 的深度学习 OCR 库）
+easyocr>=1.7.1
+
+# 图像处理（EasyOCR 和 Streamlit 共同依赖）
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# 翻译服务（免费调用 Google Translate，无需 API Key）
+deep-translator>=1.11.4
+
+# PyTorch（EasyOCR 的深度学习计算后端）
+# 注意：若已安装 torch，可跳过此行；
+#       如需 GPU 支持，请前往 https://pytorch.org/ 选择对应 CUDA 版本安装
+torch>=2.0.0
+torchvision>=0.15.0
